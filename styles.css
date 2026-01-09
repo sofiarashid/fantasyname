@@ -1,0 +1,18 @@
+body {
+    background-color:#F8E5EE;
+}
+.titlefont {
+font-family: "cc-summer-fling-split", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:75px;
+    font-style: underline;
+    color: #211103;
+}
+.headerfont {
+font-family: "warbler-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #7b0d1e;
+}
