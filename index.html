@@ -31,14 +31,25 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-
-
-
-
-                                <h2 class="card-title headingfont mt-5">What is Your First Name?</h2
-                                <p class="card-text" id="firstname">Enter Here:</p>
                                 
+                                <div class="mb-3">
+                                    <p>Please Select a Prefix:</p>
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>  
+
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label">Enter your First name:</label>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="PLEASE TYPE YOUR FIRST NAME HERE" />
+                                </div>
+
+
+                            <button class="btn btn-lg generatemermaidnamebutton" onclick="generatemermaidname()">Generate Mermaid Name</button>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
