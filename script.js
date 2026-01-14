@@ -1,13 +1,13 @@
 function generatemermaidname() {
-    get prefix();
-    get firstName();
-    get middleName();
-    get lastName();
-    get suffix();
+    prefix= getPrefix();
+    firstName=getFirstName();
+    middleName=getMiddleName();
+    lastName=getLastName();
+    suffix=getSuffix();
     return prefix + firstName + middleName + lastName  + suffix;
 }
 
-function get prefix() {
+function getPrefix() {
     if (gender="Female") {
         prefix = "Mermaid ";
     } else {
@@ -15,57 +15,55 @@ function get prefix() {
     }
 }
 
-function get firstName() {
+function getFirstName() {
     if (namelength >= 5) {
         firstName ="Coral ";
-    } else if (first letter is A or E or I or O or UI)  {
+    } else if ("AEIOU".includes(firstLetter.toUpperCase()))  {
         firstName="Pearl ";
     } else {
         firstName="Ocean ";
     }
 }
 
-function get middleName() {
-    switch(howhappy) {
-        case 1-3:
-            middleName="Sea ";
-            break;
-        case 4-7:
-            middleName="Orca ";
-            break;
-        case 8-10:
-            middleName="Wave ";
+function getMiddleName() {
+    switch(true) {
+        case (howhappy >= 1 && howhappy <=3):
+            return "Sea ";
+        case (howhappy >=4 && howhappy <=7):
+            return "Orca ";
+        case (howhappy >=8 && howhappy <=10):
+            return "Wave ";
     }
 }
 
-function get lastName() {
-    if (favcolor is pink) {
-        lastName="Poseidon ";
-    } else if (favcolor is red) {
-        lastName="Loch Ness ";
-    } else if (favcolor is orange) {
-        lastName="Megladon ";
-    } else if (favcolor is yellow) {
-        lastName="Oceanus ";
-    } else if (favcolor is green) {
-        lastName="Siren ";
-    } else if (favcolor is blue) {
-        lastName="Odysseus ";
+function getLastName() {
+    if (favcolor==="pink") {
+        return "Poseidon ";
+    } else if (favcolor==="red") {
+        return "Loch Ness ";
+    } else if (favcolor==="orange") {
+        return "Megladon ";
+    } else if (favcolor==="yellow") {
+        return "Oceanus ";
+    } else if (favcolor==="green") {
+        return "Siren ";
+    } else if (favcolor==="blue") {
+        return "Odysseus ";
     } else {
-        lastName="Kraken ";
+        return "Kraken ";
     }
 }
 
-function get suffix() {
-    if (haircolor="blonde") {
-        suffix="of the Sunlight Zone"
-    } else if (haircolor="brunette") {
-        suffix="of the Twilight Zone"
-    } else if (haircolor="black") {
-        suffix="of the Midnight Zone"
-    } else if (haircolor="ginger") {
-        suffix="of the Abyssal Zone"
+function getSuffix() {
+    if (haircolor==="blonde") {
+        return "of the Sunlight Zone"
+    } else if (haircolor==="brunette") {
+        return "of the Twilight Zone"
+    } else if (haircolor==="black") {
+        return "of the Midnight Zone"
+    } else if (haircolor==="ginger") {
+        return "of the Abyssal Zone"
     } else {
-        suffix="of the Hadal Zone"
+        return "of the Hadal Zone"
     }
 }
