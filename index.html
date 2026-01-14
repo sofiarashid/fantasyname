@@ -33,7 +33,7 @@
                             <div class="card-body">
                                 
                                 <div class="mb-3">
-                                    <p>Please Select Your Gender:</p>
+                                    <div class="headerfont">Please Select your Gender:</div>
                                     <input type="radio" id="male" name="gender" value="male">
                                     <label for="male">Male</label>
                                     <input type="radio" id="female" name="gender" value="female">
@@ -41,15 +41,31 @@
                                 </div>
                                 
                                 <div class="mb-3">
-                                    <label for="nameInput" class="form-label">Enter your First name:</label>
+                                    <label for="nameInput" class="form-label headerfont">Enter your First Name:</label>
                                     <input type="text" class="form-control" id="nameInput" placeholder="PLEASE TYPE YOUR FIRST NAME HERE" />
                                 </div>
                                 
                                 <div class="mb-3 slidecontainer">
-                                    <h3>What Is Your Age?</h3>
-                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                                    <
-                                <div>
+                                    <div class="headerfont">How Happy are You?</div>
+                                    <input type="range" min="1" max="10" value="5" class="slider" id="howhappy">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="favcolor" class="headerfont">Select your Favorite Color:</label>
+                                    <input type="color" id="favcolor" value="#0000ff">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="haircolor" class="headerfont">Select your Hair Color:</label>
+                                    <select name="haircolor" id="haircolor">
+                                        <option value="blonde">Blonde</option>
+                                        <option value="brunette">Brunette</option>
+                                        <option value="black">Black</option>
+                                        <option value="ginger">Ginger</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                    
 
                             <button class="btn btn-lg generatemermaidnamebutton" onclick="generatemermaidname()">Generate Mermaid Name</button>
                             </div>
