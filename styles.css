@@ -1,5 +1,5 @@
 body {
-    background-color:#F8E5EE;
+    background:linear-gradient(#a2adb3, #10364a);
 }
 .titlefont {
 font-family: "cc-summer-fling-split", sans-serif;
@@ -7,11 +7,18 @@ font-family: "cc-summer-fling-split", sans-serif;
     font-style: normal;
     font-size:75px;
     font-style: underline;
-    color: #211103;
+    color: #a84780;
+    margin: 10px;
+    padding: 15px;
 }
 .headerfont {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
+<<<<<<< HEAD
     font-size: 25px;
     color: #
+=======
+    font-size: 20px;
+    color: #353757;
+>>>>>>> 9ee189cc0213e712e7f36269586612b1ced3b881
 }
