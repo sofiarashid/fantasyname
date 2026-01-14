@@ -14,11 +14,11 @@ font-family: "cc-summer-fling-split", sans-serif;
 .headerfont {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
-<<<<<<< HEAD
     font-size: 25px;
-    color: #
-=======
+    color: white;
     font-size: 20px;
     color: #353757;
->>>>>>> 9ee189cc0213e712e7f36269586612b1ced3b881
+}
+.card-body {
+    background-color: #a84780;
 }
