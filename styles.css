@@ -4,6 +4,8 @@ body {
 .card {
     border-radius: 20px;
     border: 2px solid white;
+    margin: 10px;
+    padding: 25px;
 }
 .card-body {
     background-color: #a84780;
@@ -28,13 +30,35 @@ body {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
     font-size: 25px;
-    color: white;
+    color: #ffe0e0;
     font-size: 20px;
-    color: #353757;
 }
+
+
+
 #result {
     font-size: 24px;
-    color: white;
+    color: #ffe0e0;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
+}
+
+.generatemymermaidnamebutton {
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffe0e0;
+    color: #a84780;
+    border: 2px solid #a84780;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    box-sizing: border-box;
+    font-family: "farmhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.generatemymermaidnamebutton:hover {
+    background-color: #a84780;
+    color: #ffe0e0;
 }
