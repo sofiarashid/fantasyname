@@ -22,3 +22,9 @@ font-family: "cc-summer-fling-split", sans-serif;
 .card-body {
     background-color: #a84780;
 }
+#result {
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+    text-shadow: 2px 2px 4px black;
+}
