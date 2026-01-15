@@ -1,10 +1,14 @@
 function generatemermaidname() {
 
-    const name=document.getElementById("nameinput").value;
+    const name=document.getElementById("nameInput").value;
+    const gender=document.querySelecter('input[name="gender"]:checked')?.value || "male"
     const howhappy=document.getElementById("howhappy").value;
     const favcolor=document.getElementById("favcolor").value;
     const haircolor=document.getElementById("haircolor").value;    
     
+    const namelength=name.length;
+    const firstLetter=name[0] || "";
+
     const prefix= getPrefix(gender);
     const firstName=getFirstName(namelength, firstLetter);
     const middleName=getMiddleName(howhappy);
