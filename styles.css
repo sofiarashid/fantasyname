@@ -134,6 +134,8 @@ input[name="gender"] {
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;
-    background-color: #a2adb3;
+    background-color: #ffe0e0;
+    margin: 5px auto;
+    display: block;
     color: #a84780;
 }
