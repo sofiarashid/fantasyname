@@ -1,8 +1,8 @@
 function generatemermaidname() {
 
     const name=document.getElementById("nameInput").value;
-    const gender=document.querySelecter('input[name="gender"]:checked')?.value || "male"
-    const howhappy=document.getElementById("howhappy").value;
+    const gender=document.querySelector('input[name="gender"]:checked')?.value || "male"
+    const howhappy=Number(document.getElementById("howhappy").value);
     const favcolor=document.getElementById("favcolor").value;
     const haircolor=document.getElementById("haircolor").value;    
     
@@ -16,18 +16,18 @@ function generatemermaidname() {
     const suffix=getSuffix(haircolor);
     
     const fullname = prefix + firstName + middleName + lastName  + suffix;
-    document.getElementById("result").innertext = fullname;
+    document.getElementById("result").innerText = fullname;
 }
 
-function getPrefix() {
-    if (gender==="Female") {
+function getPrefix(gender) {
+    if (gender==="female") {
         return "Mermaid ";
     } else {
         return "Captain ";
     }
 }
 
-function getFirstName() {
+function getFirstName(namelength, firstLetter) {
     if (namelength >= 5) {
         return "Coral ";
     } else if ("AEIOU".includes(firstLetter.toUpperCase()))  {
@@ -37,7 +37,7 @@ function getFirstName() {
     }
 }
 
-function getMiddleName() {
+function getMiddleName(howhappy) {
     switch(true) {
         case (howhappy <=3):
             return "Sea ";
@@ -48,7 +48,7 @@ function getMiddleName() {
     }
 }
 
-function getLastName() {
+function getLastName(favcolor) {
     if (favcolor==="pink") {
         return "Poseidon ";
     } else if (favcolor==="red") {
@@ -66,7 +66,7 @@ function getLastName() {
     }
 }
 
-function getSuffix() {
+function getSuffix(haircolor) {
     if (haircolor==="blonde") {
         return "of the Sunlight Zone"
     } else if (haircolor==="brunette") {
