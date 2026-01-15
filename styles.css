@@ -37,9 +37,8 @@ body {
 .card-text {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
-    font-size: 25px;
-    color: #ffe0e0;
     font-size: 30px;
+    color: #ffe0e0;
 }
 
 
@@ -104,7 +103,7 @@ body {
 }
 
 /*radio buttons*/
-input{name="gender"} + label {
+input[name="gender"] + label {
     font-size: 20px;
     color: #ffe0e0;
 }
