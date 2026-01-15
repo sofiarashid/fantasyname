@@ -1,37 +1,45 @@
 function generatemermaidname() {
-    prefix= getPrefix();
-    firstName=getFirstName();
-    middleName=getMiddleName();
-    lastName=getLastName();
-    suffix=getSuffix();
-    return prefix + firstName + middleName + lastName  + suffix;
+
+    const name=document.getElementById("nameinput").value;
+    const howhappy=document.getElementById("howhappy").value;
+    const favcolor=document.getElementById("favcolor").value;
+    const haircolor=document.getElementById("haircolor").value;    
+    
+    const prefix= getPrefix(gender);
+    const firstName=getFirstName(namelength, firstLetter);
+    const middleName=getMiddleName(howhappy);
+    const lastName=getLastName(favcolor);
+    const suffix=getSuffix(haircolor);
+    
+    const fullname = prefix + firstName + middleName + lastName  + suffix;
+    document.getElementById("result").innertext = fullname;
 }
 
 function getPrefix() {
-    if (gender="Female") {
-        prefix = "Mermaid ";
+    if (gender==="Female") {
+        return "Mermaid ";
     } else {
-        prefix = "Captain ";
+        return "Captain ";
     }
 }
 
 function getFirstName() {
     if (namelength >= 5) {
-        firstName ="Coral ";
+        return "Coral ";
     } else if ("AEIOU".includes(firstLetter.toUpperCase()))  {
-        firstName="Pearl ";
+        return "Pearl ";
     } else {
-        firstName="Ocean ";
+        return "Ocean ";
     }
 }
 
 function getMiddleName() {
     switch(true) {
-        case (howhappy >= 1 && howhappy <=3):
+        case (howhappy <=3):
             return "Sea ";
         case (howhappy >=4 && howhappy <=7):
             return "Orca ";
-        case (howhappy >=8 && howhappy <=10):
+        case (howhappy >=8):
             return "Wave ";
     }
 }
