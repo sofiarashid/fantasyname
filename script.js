@@ -49,17 +49,19 @@ function getMiddleName(howhappy) {
 }
 
 function getLastName(favcolor) {
-    if (favcolor==="pink") {
+    const color = tinyColor(favcolor).toRgb();
+    const { r, g, b } = color;
+    if (r>g && b>g && r>150 && b>150) {
         return "Poseidon ";
-    } else if (favcolor==="red") {
+    } else if (r>g && r>b) {
         return "Loch Ness ";
-    } else if (favcolor==="orange") {
+    } else if (r>g && g>b) {
         return "Megladon ";
-    } else if (favcolor==="yellow") {
+    } else if (r>150 && g>150 && b<100) {
         return "Oceanus ";
-    } else if (favcolor==="green") {
+    } else if (g>r && g>b) {
         return "Siren ";
-    } else if (favcolor==="blue") {
+    } else if (b>r && b>g) {
         return "Odysseus ";
     } else {
         return "Kraken ";
