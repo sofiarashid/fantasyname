@@ -43,7 +43,7 @@ body {
     text-shadow: 2px 2px 4px black;
 }
 
-.generatemymermaidnamebutton {
+.generatemermaidnamebutton {
     padding: 5px;
     margin: 10px;
     background-color: #ffe0e0;
@@ -58,7 +58,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-.generatemymermaidnamebutton:hover {
+.generatemermaidnamebutton:hover {
     background-color: #a84780;
     color: #ffe0e0;
 }
