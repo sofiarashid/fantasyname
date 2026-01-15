@@ -1,4 +1,4 @@
-function generatemermaidname() {
+function generatemermaidnamebutton() {
 
     const name=document.getElementById("nameInput").value;
     const gender=document.querySelector('input[name="gender"]:checked')?.value || "male"
