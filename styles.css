@@ -70,4 +70,5 @@ body {
 .generatemermaidnamebutton:hover {
     background-color: #a84780;
     color: #ffe0e0;
+    border: 2px solid #ffe0e0;
 }
