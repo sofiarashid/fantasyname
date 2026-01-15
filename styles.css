@@ -36,13 +36,13 @@ body {
     font-style: normal;
     font-size: 25px;
     color: #ffe0e0;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
 
 #result {
-    font-size: 24px;
+    font-size: 50px;
     color: #ffe0e0;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
@@ -56,12 +56,15 @@ body {
     border: 2px solid #a84780;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    width: 100px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     box-sizing: border-box;
-    font-family: "farmhand", serif;
+    font-family: "farmhand-sans", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bold;
+    font-size: 40px;
     width: 100%;
 }
 .generatemermaidnamebutton:hover {
