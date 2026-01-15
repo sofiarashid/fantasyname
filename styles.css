@@ -107,12 +107,14 @@ label[for="male"],
 label[for="female"] {
     font-size: 20px;
     color: #ffe0e0;
-    margin: 15px auto;
+    margin-right: 40px;
     cursor: pointer;
 }
 input[name="gender"] {
     vertical-align: middle;
     cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
 /*hair color drop down*/
@@ -124,4 +126,14 @@ input[name="gender"] {
     margin-left: 15px;
     border-radius: 8px;
     border: 1px solid #a84780;
+}
+
+/*enter first name box size*/
+#nameInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #a2adb3;
+    color: #a84780;
 }
