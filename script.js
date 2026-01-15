@@ -49,22 +49,42 @@ function getMiddleName(howhappy) {
 }
 
 function getLastName(favcolor) {
-    const color = tinyColor(favcolor).toRgb();
+    const color = tinycolor(favcolor).toRgb();
     const { r, g, b } = color;
-    if (r>g && b>g && r>150 && b>150) {
-        return "Poseidon ";
-    } else if (r>g && r>b) {
-        return "Loch Ness ";
-    } else if (r>g && g>b) {
-        return "Megladon ";
-    } else if (r>150 && g>150 && b<100) {
-        return "Oceanus ";
-    } else if (g>r && g>b) {
-        return "Siren ";
-    } else if (b>r && b>g) {
-        return "Odysseus ";
-    } else {
-        return "Kraken ";
+  
+// PINK (red is strongest, blue is strong, green is weaker)
+    if (r > g && b > g && r > 150 && b > 150) {
+        return "Poseidon";
+    }
+
+    // RED (red clearly dominates)
+    else if (r > g && r > b) {
+        return "Loch Ness";
+    }
+
+    // ORANGE (red strongest, green strong, blue weak)
+    else if (r > g && g > b) {
+        return "Megladon";
+    }
+
+    // YELLOW (red & green both high, blue low)
+    else if (r > 150 && g > 150 && b < 100) {
+        return "Oceanus";
+    }
+
+    // GREEN (green dominates)
+    else if (g > r && g > b) {
+        return "Siren";
+    }
+
+    // BLUE (blue dominates)
+    else if (b > r && b > g) {
+        return "Odysseus";
+    }
+
+    // Everything else (purple, brown, gray, black, white, etc)
+    else {
+        return "Kraken";
     }
 }
 
