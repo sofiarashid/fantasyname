@@ -1,26 +1,36 @@
 body {
     background:linear-gradient(#a2adb3, #10364a);
 }
-.titlefont {
-font-family: "cc-summer-fling-split", sans-serif;
+.card {
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.card-body {
+    background-color: #a84780;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 2)
+    font-family: "warbler-deck", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+.card-title {
+    font-family: "cc-summer-fling-split", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size:75px;
+    font-size: 75px;
     font-style: underline;
     color: #a84780;
     margin: 10px;
     padding: 15px;
 }
-.headerfont {
+.card-text {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
     font-size: 25px;
     color: white;
     font-size: 20px;
     color: #353757;
-}
-.card-body {
-    background-color: #a84780;
 }
 #result {
     font-size: 24px;
