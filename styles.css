@@ -91,7 +91,7 @@ body {
     outline: none;
     margin-top: 10px;
 }
-.slider::webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none; /*removes default styling */
     width: 25px;
     height: 25px;
@@ -103,9 +103,16 @@ body {
 }
 
 /*radio buttons*/
-input[name="gender"] + label {
+label[for="male"],
+label[for="female"] {
     font-size: 20px;
     color: #ffe0e0;
+    margin: 15px auto;
+    cursor: pointer;
+}
+input[name="gender"] {
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 /*hair color drop down*/
