@@ -1,5 +1,6 @@
 body {
     background:linear-gradient(#a2adb3, #10364a);
+    height: 100%;
 }
 .card {
     border-radius: 20px;
@@ -11,7 +12,7 @@ body {
     background-color: #a84780;
     color: #ffe0e0;
     border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 2)
+    box-shadow: 0 0 15px rgba(0, 0, 0, 2);
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
     text-align: center;
