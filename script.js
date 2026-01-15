@@ -51,40 +51,20 @@ function getMiddleName(howhappy) {
 function getLastName(favcolor) {
     const color = tinycolor(favcolor).toRgb();
     const { r, g, b } = color;
-  
-// PINK (red is strongest, blue is strong, green is weaker)
-    if (r > g && b > g && r > 150 && b > 150) {
-        return "Poseidon";
-    }
-
-    // RED (red clearly dominates)
-    else if (r > g && r > b) {
-        return "Loch Ness";
-    }
-
-    // ORANGE (red strongest, green strong, blue weak)
-    else if (r > g && g > b) {
-        return "Megladon";
-    }
-
-    // YELLOW (red & green both high, blue low)
-    else if (r > 150 && g > 150 && b < 100) {
-        return "Oceanus";
-    }
-
-    // GREEN (green dominates)
-    else if (g > r && g > b) {
+    if (r > g && b > g && r > 150 && b > 150) { /*pink*/
+        return "Poseidon ";
+    } else if (r > g && r > b) { /*red*/
+        return "Loch Ness ";
+    } else if (r > g && g > b) { /*orange*/
+        return "Megladon ";
+    } else if (r > 150 && g > 150 && b < 100) { /*yellow*/
+        return "Oceanus ";
+    } else if (g > r && g > b) { /*green*/
         return "Siren";
-    }
-
-    // BLUE (blue dominates)
-    else if (b > r && b > g) {
-        return "Odysseus";
-    }
-
-    // Everything else (purple, brown, gray, black, white, etc)
-    else {
-        return "Kraken";
+    } else if (b > r && b > g) { /*blue*/
+        return "Odysseus ";
+    } else { /*purple, brown, gray, black, white*/
+        return "Kraken ";
     }
 }
 
