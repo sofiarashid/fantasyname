@@ -5,10 +5,11 @@ body {
     border-radius: 20px;
     margin: 30px;
     padding: 25px;
+    font-size: 15px;
 }
 .card-body {
     background-color: #a84780;
-    color: white;
+    color: #ffe0e0;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 2)
     font-family: "warbler-deck", sans-serif;
@@ -21,7 +22,7 @@ body {
     font-style: normal;
     font-size: 75px;
     font-style: underline;
-    color: #a84780;
+    color: #ffe0e0;
     margin: 10px;
     padding: 15px;
 }
