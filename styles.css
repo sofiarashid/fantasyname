@@ -51,7 +51,7 @@ body {
     font-family: "cc-summer-fling-split", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
     color: #e6d5f5;
     margin: 10px;
     padding: 15px;
@@ -60,7 +60,7 @@ body {
 .instructionstext {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
-    font-size: 50px;
+    font-size: 15px;
     color: #e6d5f5;
 }
 
