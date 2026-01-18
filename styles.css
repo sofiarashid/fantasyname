@@ -44,7 +44,7 @@ body {
     color: #e6d5f5;
     text-align: center;
 }
-.card-title2 {
+.instructionstitle {
     font-family: "cc-summer-fling-split", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -54,7 +54,7 @@ body {
     padding: 15px;
 }
 
-.card-text2 {
+.instructionstext {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
     font-size: 50px;
