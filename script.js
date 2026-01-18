@@ -33,7 +33,7 @@ function getFirstName(namelength, firstLetter) {
     } else if ("AEIOU".includes(firstLetter.toUpperCase()))  {
         return "Pearl ";
     } else {
-        return "Ocean ";
+        return "Orca ";
     }
 }
 
@@ -42,9 +42,9 @@ function getMiddleName(howhappy) {
         case (howhappy <=3):
             return "Sea ";
         case (howhappy >=4 && howhappy <=7):
-            return "Orca ";
+            return "Shore ";
         case (howhappy >=8):
-            return "Wave ";
+            return "Ocean ";
     }
 }
 
