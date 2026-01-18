@@ -24,7 +24,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     font-family: "warbler-deck", sans-serif;
-    text-align: center;
 }
 
 .card-title {
@@ -35,13 +34,30 @@ body {
     color: #e6d5f5;
     margin: 10px;
     padding: 15px;
-    text-decoration: underline;
+    text-align: center;
 }
 
 .card-text {
     font-family: "warbler-deck", sans-serif;
     font-style: normal;
     font-size: 30px;
+    color: #e6d5f5;
+    text-align: center;
+}
+.card-title2 {
+    font-family: "cc-summer-fling-split", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    color: #e6d5f5;
+    margin: 10px;
+    padding: 15px;
+}
+
+.card-text2 {
+    font-family: "warbler-deck", sans-serif;
+    font-style: normal;
+    font-size: 50px;
     color: #e6d5f5;
 }
 
@@ -89,8 +105,7 @@ body {
 }
 
 .slider {
-    -webkit-appearance: none;
-    /*takes off automatic styling*/
+    -webkit-appearance: none; /*takes off automatic styling*/
     width: 100%;
     height: 15px;
     background: #e6d5f5;
@@ -100,37 +115,36 @@ body {
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    /*removes default styling */
+    -webkit-appearance: none;/*removes default styling */
     width: 25px;
     height: 25px;
     background: #b385dc;
-    border-radius: 50%;
-    /*circle*/
+    border-radius: 50%;/*circle*/
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border: 2px solid #e6d5f5;
-    /*outline on dot on slider*/
+    border: 2px solid #e6d5f5;/*outline on dot on slider*/
 }
 
 /*radio buttons*/
 .radio-group {
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 30px;
 }
-
+.radio-item {
+    display: flex;
+    align-items: center;
+}
 .radio-item input[type="radio"] {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
-
 .radio-item label {
-    font-size: 30px;
+    font-size: 60px;
     color: #e6d5f5;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /*hair color drop down*/
