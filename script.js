@@ -15,7 +15,7 @@ function generatemermaidnamebutton() {
     const lastName=getLastName(favcolor);
     const suffix=getSuffix(haircolor);
     
-    const fullname = prefix + firstName + middleName + lastName  + suffix;
+    const fullname = `${prefix}${firstName}${middleName}${lastName}${suffix}`;
     document.getElementById("result").innerText = fullname;
 }
 
@@ -28,10 +28,10 @@ function getPrefix(gender) {
 }
 
 function getFirstName(namelength, firstLetter) {
-    if (namelength >= 5) {
+    if ("AEIOU".includes(firstLetter.toUpperCase()))  {
+            return "Pearl ";
+    } else if (namelength >= 5) {
         return "Coral ";
-    } else if ("AEIOU".includes(firstLetter.toUpperCase()))  {
-        return "Pearl ";
     } else {
         return "Orca ";
     }
@@ -43,7 +43,7 @@ function getMiddleName(howhappy) {
             return "Sea ";
         case (howhappy >=4 && howhappy <=7):
             return "Shore ";
-        case (howhappy >=8):
+        default:
             return "Ocean ";
     }
 }
@@ -56,11 +56,11 @@ function getLastName(favcolor) {
     } else if (r > g && r > b) { /*red*/
         return "Loch Ness ";
     } else if (r > g && g > b) { /*orange*/
-        return "Megladon ";
+        return "Megalodon ";
     } else if (r > 150 && g > 150 && b < 100) { /*yellow*/
         return "Oceanus ";
     } else if (g > r && g > b) { /*green*/
-        return "Siren";
+        return "Siren ";
     } else if (b > r && b > g) { /*blue*/
         return "Odysseus ";
     } else { /*purple, brown, gray, black, white*/
