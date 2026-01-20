@@ -15,7 +15,7 @@ body {
     background-color: #b385dc;
     border-radius: 20px;
     padding: 0px;
-    margin: 20px;
+    margin: 0;
 }
 .card-body {
     background-color: #b385dc;
@@ -30,6 +30,10 @@ body {
 }
 .mermaidnamegeneratorcol9 {
     text-align: center;
+    margin: 30px 50px 30px 10px;
+}
+.instructionscol3 {
+    margin: 30px 10px 30px 50px;
 }
 .generatortitle {
     font-family: "cc-summer-fling-split", sans-serif;
