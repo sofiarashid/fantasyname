@@ -30,9 +30,11 @@ body {
 }
 .mermaidnamegeneratorcol9 {
     text-align: center;
+}
+.col-xl-9 > .card {
     margin: 30px 50px 30px 10px;
 }
-.instructionscol3 {
+.col-xl-3 > .card {
     margin: 30px 10px 30px 50px;
 }
 .generatortitle {
