@@ -32,12 +32,12 @@ body {
     text-align: center;
 }
 .col-xl-9 > .card {
-    margin: 30px 50px 30px 10px;
+    margin: 40px;
     width: auto;
     display: block;
 }
 .col-xl-3 > .card {
-    margin: 30px 10px 30px 50px;
+    margin: 40px;
     width: auto;
     display: block;
 }
