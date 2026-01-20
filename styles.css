@@ -17,7 +17,6 @@ body {
     padding: 0px;
     margin: 30px;
 }
-
 .card-body {
     background-color: #b385dc;
     color: #e6d5f5;
@@ -28,6 +27,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.mermaidnamegeneratorcol9 {
+    text-align: center;
+}
+.insructions ul,
+.instructions ol,{
+    text-align: left;
+    margin-left: 0;
+    padding-left: 20px;
+}
+.instructionstext {
+    width: 100%;
+    text-align: left;
+}
+.instructionstitle {
+    text-align: center;
 }
 
 .generatortitle {
@@ -171,19 +186,4 @@ body {
     margin: 5px auto;
     display: block;
     color: #b385dc;
-}
-
-
-.insructions ul,
-.instructions ol {
-    text-align: left;
-    margin-left: 0;
-    padding-left: 20px;
-}
-.instructionstext {
-    width: 100%;
-    text-align: left;
-}
-.instructionstitle {
-    text-align: center;
 }
