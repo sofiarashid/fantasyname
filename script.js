@@ -4,7 +4,11 @@ function generatemermaidnamebutton() {
     const gender=document.querySelector('input[name="gender"]:checked')?.value || "male"
     const howhappy=Number(document.getElementById("howhappy").value);
     const favcolor=document.getElementById("favcolor").value;
-    const haircolor=document.getElementById("haircolor").value;    
+    const haircolor=document.getElementById("haircolor").value;
+
+    if (!name || !gender || favcolor==="#00000ff") {
+        alert("Please answer all questions to generate mermaid name!")
+    }
     
     const namelength=name.length;
     const firstLetter=name[0] || "";
