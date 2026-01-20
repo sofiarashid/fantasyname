@@ -6,8 +6,9 @@ function generatemermaidnamebutton() {
     const favcolor=document.getElementById("favcolor").value;
     const haircolor=document.getElementById("haircolor").value;
 
-    if (!name || !gender || favcolor==="#00000ff") {
-        alert("Please answer all questions to generate mermaid name!")
+    if (!name || !gender || favcolor==="#0000ff") {
+        alert("Please answer all questions to generate mermaid name!");
+        return;
     }
     
     const namelength=name.length;
