@@ -33,9 +33,13 @@ body {
 }
 .col-xl-9 > .card {
     margin: 30px 50px 30px 10px;
+    width: auto;
+    display: block;
 }
 .col-xl-3 > .card {
     margin: 30px 10px 30px 50px;
+    width: auto;
+    display: block;
 }
 .generatortitle {
     font-family: "cc-summer-fling-split", sans-serif;
